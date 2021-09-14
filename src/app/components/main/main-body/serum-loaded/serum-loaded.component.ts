@@ -9,6 +9,9 @@ import {DataService} from '../../../../data.service'
 })
 export class SerumLoadedComponent implements OnInit {
 
+
+  
+
   constructor( private playData : PlayDataService, private musicData: DataService) { 
     this.musicData.getData().subscribe( data => {
       console.log(data);
@@ -21,7 +24,7 @@ export class SerumLoadedComponent implements OnInit {
   songsData = [
     {
       title: "",
-      src: "http://192.168.43.98:8000/852%20Hz%20%E2%9E%A4%20Release%20Unconscious%20Bad%20Energy%20_%20Open%20up%20to%20Spiritual%20Experience%20%26%20Deep%20Healing%20_%20Let%20Go%20%28%20256kbps%20cbr%20%29.mp3",
+      src: "http://192.168.43.138:8000/852%20Hz%20%E2%9E%A4%20Release%20Unconscious%20Bad%20Energy%20_%20Open%20up%20to%20Spiritual%20Experience%20%26%20Deep%20Healing%20_%20Let%20Go%20%28%20256kbps%20cbr%20%29.mp3",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM-63MCBaZoty-AmXMySGocxysc_p_dzdORA&usqp=CAU",
     },{
       title: "",
@@ -59,7 +62,7 @@ export class SerumLoadedComponent implements OnInit {
       title: "",
       src: "",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Y4_aIw0u6mJIIgUHZQPeRNnK-AOS-0n7Qg&usqp=CAU",
-    },
+    }
   ]
 
   sendData(data:any){
