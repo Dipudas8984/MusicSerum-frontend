@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PlayDataService} from '../../../../play-data.service'
+import {DataService} from '../../../../data.service'
 
 @Component({
   selector: 'app-serum-loaded',
@@ -8,7 +9,12 @@ import {PlayDataService} from '../../../../play-data.service'
 })
 export class SerumLoadedComponent implements OnInit {
 
-  constructor( private playData : PlayDataService) { }
+  constructor( private playData : PlayDataService, private musicData: DataService) { 
+    this.musicData.getData().subscribe( data => {
+      console.log(data);
+      
+    })
+  }
 
   ngOnInit(): void {
   }

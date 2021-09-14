@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { ArtistComponent } from './components/artist/artist.component';
@@ -13,6 +13,7 @@ import { SerumLoadedComponent } from './components/main/main-body/serum-loaded/s
 import { ArtistBodyComponent } from './components/artist/artist-body/artist-body.component';
 import { PlayerComponent } from './components/player/player.component';
 import {PlayDataService} from '../app/play-data.service'
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -30,9 +31,10 @@ import {PlayDataService} from '../app/play-data.service'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [PlayDataService],
+  providers: [PlayDataService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
