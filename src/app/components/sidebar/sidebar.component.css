@@ -1,0 +1,49 @@
+.sidebar{
+    height: 100%;
+    width: 20%;
+    /* position: relative; */
+    /* left: 0; */
+    background-color: #16151a;
+    position: fixed;
+    border-right: 1px solid rgb(56, 56, 56);
+    transition: opacity 0.5s ease-out;
+}
+
+.sidebar a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover{
+    background-color: rgb(124, 122, 122);
+}
+
+.menu{
+    top: 10px;
+    position: fixed;
+    padding: 5px;
+}
+
+.menu button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.menu-icon-img{
+    width: 30px;
+    height: 25px;
+}
+
+@media (max-width: 550px) {
+    .sidebar{
+        /* display: none; */
+        transition: opacity 0.5s ease-out;
+        /* opacity: 0; */
+        width: 50%;
+    }
+}
+
+

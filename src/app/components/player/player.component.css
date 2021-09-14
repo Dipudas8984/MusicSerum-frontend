@@ -1,0 +1,153 @@
+.player{
+    width: 20%;
+    height: 50%;
+    /* background-color: blue; */
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    /* position: absolute;
+    left: 0;
+    background-color: #16151a;
+    position: fixed;
+    border-right: 1px solid rgb(56, 56, 56); */
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.play{
+    /* display: none; */
+    width: 50px;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.play button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+/* 
+.player img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 10px;
+} */
+
+
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+.timestamp{
+    /* margin: auto; */
+    text-align: center;
+  }
+  
+  
+  .range {
+    -webkit-appearance: none;
+    background: rgb(131, 131, 131);
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgb(131, 131, 131);
+    width: 90%;
+  }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px rgba(23, 253, 241, 0.609);
+  }
+  
+
+
+.time{
+    color: white;
+}
+
+
+.action-btn{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.action-btn img{
+  width: 30px;
+}
+
+.time{
+  display: flex;
+  justify-content: space-between;
+}
+
+ @media (min-width: 1150px) {
+    .image{
+      margin: auto;
+      width: 60%;
+      height: 200px
+    }
+    .action-btns{
+      padding: 30px;
+    }
+    .timestamp input{
+      width: 100%
+    }
+
+  }
+
+
+
+  @media (max-width: 1150px) {
+    .player{
+      width: 100%;
+      height: 90px;
+      margin-top: auto;
+      background-color: rgba(0, 0, 0, 0.739);
+      bottom: 0;
+      display: flex;
+      padding: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .image{
+      /* height: 90%; */
+      width: 90px;
+      height: 100%;
+    }
+    .timestamp{
+      margin-top: auto;
+      margin-bottom: auto;
+
+    }
+    .timestamp input{
+      width: 100%;
+      }
+    .action-btns{
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+      padding: 10px
+    }
+  }

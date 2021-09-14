@@ -1,0 +1,20 @@
+<div class="player">
+    <div class="image">
+        <img src={{image}} alt="">
+    </div>
+    <div class="action-btns">
+        <button *ngIf="!isPlaying" class="action-btn" (click)="play()">
+            <img src="../../../assets/images/play-dark.png" alt="">
+        </button>
+        <button *ngIf="isPlaying" class="action-btn" (click)="pause()">
+            <img src="../../../assets/images/pause.png" alt="">
+        </button>
+        <div class="timestamp">
+            <input type="range" name="" id="duration" min="0" max="1" step="0.01" #seek (input)="setSeek(seek.value)" [value]="currentTime">
+        </div>
+        <div class="time">
+            <div>{{readCurrentTime}}</div>
+            <div>{{readDuration}}</div>
+        </div>
+    </div>
+</div>

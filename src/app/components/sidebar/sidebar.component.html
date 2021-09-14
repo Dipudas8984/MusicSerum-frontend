@@ -1,0 +1,13 @@
+<div (window:resize)="onResize($event)">
+    <div class="menu" [hidden]="!mobile">
+        <button (click)="toggleBtn()">
+            <img src={{btnIcon}} alt="" class="menu-icon-img">
+        </button>
+    </div>
+    <div class="sidebar" id="sidebar" [hidden]="!showMenu">
+        <a routerLink="/home">Home</a>
+        <a routerLink="/artist">Artists</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#charts">Genres</a>
+    </div>
+</div>

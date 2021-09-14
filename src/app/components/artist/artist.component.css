@@ -1,0 +1,14 @@
+.artist-body{
+    margin-left: 20%;
+    padding: 20px;
+    background-color: #16151a;
+    color: rgb(168, 168, 168);
+}
+
+
+@media (max-width: 550px) {
+    
+    .artist-body{
+        margin-left: 0;
+    }
+}

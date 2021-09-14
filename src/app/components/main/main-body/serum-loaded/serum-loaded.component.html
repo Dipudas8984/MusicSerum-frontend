@@ -1,0 +1,7 @@
+<div class="item1">
+    <p class="headline">New Serum Loaded</p>
+    <div class="cards">
+        <div class="card" *ngFor='let data of songsData;' (click)="sendData(data)">
+            <img src={{data.image}} alt="">
+        </div>
+   </div>

@@ -1,0 +1,24 @@
+
+.main-body{
+    margin-left: 20%;
+    padding: 20px;
+    /* background-color: #16151a; */
+    color: rgb(168, 168, 168);
+}
+
+
+.light{
+    background-color: rgba(236, 247, 243, 0.61);
+    margin-left: 20%;
+    padding: 20px;
+    color: rgb(168, 168, 168);
+}
+
+
+
+@media (max-width: 550px) {
+    
+    .main-body{
+        margin-left: 0;
+    }
+}
